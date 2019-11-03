@@ -1,0 +1,5 @@
+data=xlsread('rekap data penelitian.xlsx');
+x=xlsread('data_training_indo.xls','a2:i561');
+y=x(:,9);
+x_baru=x(:,1:8);
+b=x_baru\y
